@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/gst-rates" element={<GstRates/>} />
           <Route path="/about-us" element={<AboutUs/>} />
         </Route>
-        <Route path="/login" element={<Login />} />
+        <Route path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<Signup />} />
 
       </Routes>
