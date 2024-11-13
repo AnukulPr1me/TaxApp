@@ -1,8 +1,11 @@
-import React from 'react'
+
+import Carousal from '../components/Carousal'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div>
+      <Carousal/>
+    </div>
   )
 }
 

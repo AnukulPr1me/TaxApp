@@ -4,12 +4,13 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'poppins';
+    font-family: 'Poppins';
     src: url("./assets/fonts/Poppins-Regular.ttf");
 }
 
 @layer components {
     .navLinks {
-        @apply transition-colors duration-200 cursor-pointer  px-2 py-1 rounded-md hover:shadow-md;
+        @apply p-2 rounded-md transition-transform transform hover:shadow-lg
+        hover:border hover:border-primary_green hover:scale-105;
     }
 }
