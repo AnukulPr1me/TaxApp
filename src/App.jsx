@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import GstRates from "./screens/GstRates";
 import AboutUs from "./components/AboutUs";
+import TaxPlanning from "./screens/taxPlanning";
 
 
 
@@ -21,7 +22,7 @@ const App = () => {
         </Route>
         <Route path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<Signup />} />
-       
+        <Route path="/tax-planning" element={<TaxPlanning />} />
 
       </Routes>
     </Router>
