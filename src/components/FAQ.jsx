@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
-import CustomButton from './CustomButton';
+
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);

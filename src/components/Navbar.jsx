@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="text-lg font-extrabold">TaxApp</div>
 
       {/* Navigation Links */}
-      <div className="flex gap-8">
+      <div className="flex gap-10  items-center">
         <p className="navLinks">Home</p>
         <p className="navLinks">About</p>
         <p className="navLinks">Contact</p>
