@@ -7,6 +7,8 @@ import "./index.css";
 import GstRates from "./screens/GstRates";
 import AboutUs from "./components/AboutUs";
 
+
+
 // added the gst-rates route
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
         </Route>
         <Route path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<Signup />} />
+       
 
       </Routes>
     </Router>
