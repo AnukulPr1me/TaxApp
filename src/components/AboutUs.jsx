@@ -2,68 +2,48 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <section className="about-us bg-gray-100 py-10 px-5">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8">About Us</h2>
+    <div className="container mx-auto p-8">
+      <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">
+        About Us
+      </h1>
 
-        {/* First Box for Text and Photo */}
-        <div className="mb-6 p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
-          <div className="mb-4">
-            <img 
-              src="https://via.placeholder.com/150" 
-              alt="Team photo" 
-              className="w-32 h-32 rounded-full object-cover mx-auto" 
-            />
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            We understand that paying taxes in India can be a complex and stressful experience for individuals and small businesses alike. With tax rules frequently changing, and multiple forms and deadlines to keep track of, it’s easy to feel overwhelmed. That’s why we’ve created an all-in-one platform that simplifies every aspect of tax filing, from calculations to secure document storage.
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        {/* Welcome Section */}
+        <div className="bg-blue-50 rounded-lg shadow-lg p-6 flex flex-col justify-between">
+          <h2 className="text-2xl font-semibold text-blue-700 mb-4">Welcome</h2>
+          <p className="text-gray-700 mb-4">
+            Welcome to our Tax Filing App. This initiative is dedicated to making the tax filing process clear and accessible, whether you're filing as an individual, working professional, or a small business owner. We aim to simplify tax-related information, so anyone can approach tax season with confidence and ease.
           </p>
         </div>
-
-        {/* Second Box for Text and Photo */}
-        <div className="mb-6 p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
-          <div className="mb-4">
-            <img 
-              src="https://via.placeholder.com/150" 
-              alt="Platform Features" 
-              className="w-32 h-32 rounded-full object-cover mx-auto" 
-            />
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            Our platform is designed to make tax filing straightforward, accurate, and even stress-free. We guide users step-by-step through tax forms, provide automated calculations, and help users maximize their savings with personalized tax tips. Our secure system organizes your important tax documents, offers real-time alerts for deadlines and rule changes, and provides a secure payment portal for quick, direct tax payments.
+        
+        {/* Project Purpose Section */}
+        <div className="bg-blue-50 rounded-lg shadow-lg p-6 flex flex-col justify-between">
+          <h2 className="text-2xl font-semibold text-blue-700 mb-4">Our App Purpose</h2>
+          <p className="text-gray-700 mb-4">
+            Our App is designed to provide straightforward guidance on tax filing, addressing common questions and simplifying complex concepts. We’re here to break down essential tax filing steps, explain available deductions and credits, and help individuals understand the importance of timely, accurate filing.
           </p>
         </div>
-
-        {/* Third Box for Text and Photo */}
-        <div className="mb-6 p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
-          <div className="mb-4">
-            <img 
-              src="https://via.placeholder.com/150" 
-              alt="Tax Expert Support" 
-              className="w-32 h-32 rounded-full object-cover mx-auto" 
-            />
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            We are dedicated to staying up-to-date with the latest tax regulations so you don’t have to worry about compliance. Our chatbot is available 24/7 for any questions, and if you need expert assistance, you can connect with one of our experienced tax consultants.
+        
+        {/* What We Offer Section */}
+        <div className="bg-blue-50 rounded-lg shadow-lg p-6 flex flex-col justify-between">
+          <h2 className="text-2xl font-semibold text-blue-700 mb-4">What We Offer</h2>
+          <ul className="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>Educational Resources:</strong> Step-by-step guides and tips to help you navigate the filing process, whether you’re filing simple individual taxes or handling business-related forms.</li>
+            <li><strong>Helpful Tools:</strong> Checklists, calculators, and sample forms to make preparing for tax season smoother.</li>
+            <li><strong>Clear Explanations:</strong> Simplified explanations of terms, tax brackets, and regulations to help users avoid common mistakes.</li>
+          </ul>
+        </div>
+        
+        {/* Our Mission Section */}
+        <div className="bg-blue-50 rounded-lg shadow-lg p-6 flex flex-col justify-between">
+          <h2 className="text-2xl font-semibold text-blue-700 mb-4">Our Mission</h2>
+          <p className="text-gray-700 mb-4">
+            Our mission is to empower individuals with the knowledge to file taxes accurately and confidently, minimizing errors and maximizing compliance. By providing clear, accessible resources, we hope to make tax season more manageable for everyone involved in this project!
           </p>
         </div>
-
-        {/* Fourth Box for Text and Photo */}
-        <div className="mb-6 p-6 bg-white shadow-lg rounded-lg flex flex-col items-center">
-          <div className="mb-4">
-            <img 
-              src="https://via.placeholder.com/150" 
-              alt="Tax Filing Made Easy" 
-              className="w-32 h-32 rounded-full object-cover mx-auto" 
-            />
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            With our platform, you can manage all your tax needs in one place, avoid penalties, and save more money. Our mission is to make taxes simple, accurate, and stress-free, so you can focus on what really matters.
-          </p>
-        </div>
-
       </div>
-    </section>
+    </div>
   );
 };
 
