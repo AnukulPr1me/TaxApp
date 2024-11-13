@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import GstRates from "./screens/GstRates";
 import AboutUs from "./components/AboutUs";
+
 // added the gst-rates route
 const App = () => {
   return (

@@ -8,9 +8,12 @@ const Navbar = () => {
       <div className="text-lg font-extrabold">TaxApp</div>
 
       {/* Navigation Links */}
-      <div className="flex gap-10  items-center">
+      <div className="max-md:hidden flex gap-10  items-center">
         <p className="navLinks">Home</p>
-        <p className="navLinks">About</p>
+        <Link to="/about-us">
+          <p className="navLinks">About</p>
+        </Link>
+      
         <p className="navLinks">Contact</p>
 
         {/* Link to Sign In page */}

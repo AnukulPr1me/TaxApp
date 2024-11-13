@@ -4,10 +4,20 @@
 @tailwind utilities;
 
 
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'Poppins';
     src: url("./assets/fonts/Poppins-Regular.ttf");
 }
+.green_gradient {
+    background: linear-gradient(135deg, #7bed9f, #a4f2bb, #d8fae0, rgba(255, 255, 255, 0));
+}
+
 
 @layer components {
     .navLinks {

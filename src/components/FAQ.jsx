@@ -47,7 +47,7 @@ const FAQ = () => {
       {faqData.map((faq, index) => (
         <div key={index} className="border-b">
           <div
-            className="cursor-pointer py-4 px-6 bg-gray-200 flex justify-between items-center"
+            className="cursor-pointer py-4 px-6  flex justify-between items-center"
             onClick={() => toggleAccordion(index)}
           >
             <p className="font-semibold text-[20px]">{faq.question}</p>
