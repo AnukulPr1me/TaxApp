@@ -2,44 +2,29 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto p-8">
-      <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">
-        About Us
-      </h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Welcome Section */}
-        <div className="bg-blue-50 rounded-lg shadow-lg p-6 flex flex-col justify-between">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">Welcome</h2>
-          <p className="text-gray-700 mb-4">
-            Welcome to our Tax Filing App. This initiative is dedicated to making the tax filing process clear and accessible, whether you're filing as an individual, working professional, or a small business owner. We aim to simplify tax-related information, so anyone can approach tax season with confidence and ease.
+    <div className="p-8 rounded-lg max-w-6xl mx-auto text-black h-screen mt-[60px]">
+      <h2 className="text-3xl font-semibold mb-4 border-b border-gray-600 pb-2">About Us</h2>
+      <div className="space-y-6">
+        <div className="p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-semibold">Our App</h3>
+          <p className="text-black mt-2">
+            We’re introducing a powerful platform designed to make tax management simple and hassle-free. Here’s what our app offers:
           </p>
-        </div>
-        
-        {/* Project Purpose Section */}
-        <div className="bg-blue-50 rounded-lg shadow-lg p-6 flex flex-col justify-between">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">Our App Purpose</h2>
-          <p className="text-gray-700 mb-4">
-            Our App is designed to provide straightforward guidance on tax filing, addressing common questions and simplifying complex concepts. We’re here to break down essential tax filing steps, explain available deductions and credits, and help individuals understand the importance of timely, accurate filing.
-          </p>
-        </div>
-        
-        {/* What We Offer Section */}
-        <div className="bg-blue-50 rounded-lg shadow-lg p-6 flex flex-col justify-between">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">What We Offer</h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li><strong>Educational Resources:</strong> Step-by-step guides and tips to help you navigate the filing process, whether you’re filing simple individual taxes or handling business-related forms.</li>
-            <li><strong>Helpful Tools:</strong> Checklists, calculators, and sample forms to make preparing for tax season smoother.</li>
-            <li><strong>Clear Explanations:</strong> Simplified explanations of terms, tax brackets, and regulations to help users avoid common mistakes.</li>
+          <ul className="list-disc list-inside mt-2 text-black">
+            <li>Easy Tax Filing: Guided steps to help you file accurately every time.</li>
+            <li>Automatic Calculations: Fewer errors with precise, automated calculations.</li>
+            <li>Document Storage: Keep all your tax documents organized and secure.</li>
+            <li>Secure Payments: Manage tax payments quickly and safely in one place.</li>
+            <li>Tax-Saving Insights: Personalized tips to help you save more.</li>
+            <li>Deadline Reminders: Get alerts to stay on top of important dates.</li>
+            <li>24/7 Support: Assistance whenever you need it with chatbot and expert consultants.</li>
+            <li>Always Up-to-Date: Compliance with the latest tax rules and regulations.</li>
           </ul>
         </div>
-        
-        {/* Our Mission Section */}
-        <div className="bg-blue-50 rounded-lg shadow-lg p-6 flex flex-col justify-between">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">Our Mission</h2>
-          <p className="text-gray-700 mb-4">
-            Our mission is to empower individuals with the knowledge to file taxes accurately and confidently, minimizing errors and maximizing compliance. By providing clear, accessible resources, we hope to make tax season more manageable for everyone involved in this project!
+        <div className="p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-semibold">Why It Matters</h3>
+          <p className="text-black mt-2">
+            Our app brings everything together to make tax filing quick, accurate, and stress-free. By simplifying the process, you can avoid penalties, maximize your savings, and focus on what matters most.
           </p>
         </div>
       </div>
@@ -47,4 +32,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUs;

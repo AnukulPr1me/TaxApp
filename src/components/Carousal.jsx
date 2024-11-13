@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import image1 from "../assets/newImg/image1.jpg"
-import image2 from "../assets/newImg/image2.jpg"
-import image3 from "../assets/newImg/image3.jpg"
-import image4 from "../assets/newImg/image4.jpg"
-import image5 from "../assets/newImg/image5.jpg"
+
 
 const Carousel = () => {
   const images = [
-     image1,
-     image2,
-     image3,
-     image4,
-     image5,
- 
+   
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,7 +35,7 @@ const Carousel = () => {
       >
         {images.map((image, index) => (
           <div key={index} className="w-full h-full flex-shrink-0">
-            <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
+           
           </div>
         ))}
       </div>

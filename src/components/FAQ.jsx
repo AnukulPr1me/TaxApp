@@ -43,7 +43,7 @@ const FAQ = () => {
   
 
   return (
-    <div className="w-full px-[110px]">
+    <div className="w-full px-2 md:px-[110px]">
       {faqData.map((faq, index) => (
         <div key={index} className="border-b">
           <div

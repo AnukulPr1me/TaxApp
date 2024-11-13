@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import taxIcon from "../assets/images/taxIcon.webp";
+import videoCall from "../assets/images/videoCall.webp"
+import taxfiling from "../assets/images/taxfiling.webp"
 
 const linksData = [
   {
@@ -15,7 +17,7 @@ const linksData = [
     title: "Tax Filing",
     details:
       "File your tax returns quickly and securely. Our platform ensures you comply with the latest tax laws, making the process easier, faster, and error-free. Get reminders and support throughout the filing process.",
-    imageLink: taxIcon,
+    imageLink: taxfiling,
     link: "/", // Default link, replace later
   },
   {
@@ -39,7 +41,7 @@ const linksData = [
     title: "Tax Consulting",
     details:
       "Get personalized advice from tax professionals to navigate complex tax scenarios. Whether you're self-employed, investing, or have international tax concerns, our experts are here to guide you.",
-    imageLink: taxIcon,
+    imageLink: videoCall,
     link: "/", // Default link, replace later
   },
   {
