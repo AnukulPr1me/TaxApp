@@ -6,6 +6,7 @@ import Links from "../components/Links";
 import money1 from "../assets/images/money1.webp";
 import money2 from "../assets/images/money2.png";
 import Carousal from "../components/Carousal"
+import { useGSAP } from '@gsap/react';
 
 const Hero = () => {
   const [chatBotActive, setChatBotActive] = useState(false);
@@ -15,6 +16,17 @@ const Hero = () => {
   const handleChatBot = () => {
     setChatBotActive(!chatBotActive);
   };
+  useGSAP(() => {
+    gsap.from(".money_img", {
+      top: -300,
+      opacity: 0,
+      duration: 2,
+      repeat: 0, // No loop
+      yoyo: true, // Makes the animation reverse back
+      ease: "bounce.out", // Bounce easing for a bouncing effect
+    });
+  });
+  
 
   useEffect(() => {
     // Animate underline on mount
@@ -50,7 +62,7 @@ const Hero = () => {
           <span className="relative">
             <img
               src={money1}
-              className="max-md:w-[50px] max-md:h-[50px] max-md:hidden w-[80px] h-[80px] absolute top-[-55px] left-[30px] z-10" // Adjust this based on how you want the money logo to overlay
+              className="max-md:w-[50px] max-md:h-[50px] max-md:hidden w-[80px] h-[80px] absolute top-[-55px] left-[30px] z-10 money_img" // Adjust this based on how you want the money logo to overlay
               alt="money icon"
             />
             Tax
