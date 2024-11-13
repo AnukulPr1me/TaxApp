@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Goods from "./Goods";
-import Services from "./Services";
+import Goods from "../components/Goods";
+import Services from "../components/Services";
 
 const GstRates = () => {
   // State to manage which tab is active
