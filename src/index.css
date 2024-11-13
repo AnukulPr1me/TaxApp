@@ -14,4 +14,7 @@
         @apply p-2 rounded-md transition-transform transform hover:shadow-lg
         hover:border hover:border-primary_green hover:scale-105;
     }
+    .roundedButton{
+        @apply flex items-center justify-center bg-secondary_green h-[30px] w-[30px] rounded-full text-white font-semibold shadow-md hover:bg-secondary_green transition-transform transform hover:scale-105 active:scale-95 cursor-pointer;
+    }
 }
