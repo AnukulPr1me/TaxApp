@@ -44,7 +44,7 @@ const Navbar = () => {
         <p className="navLinks">Contact</p>
 
         {/* Link to Sign In page */}
-        <Link to="/sign-up">
+        <Link to="/sign-in">
           <CustomButton text={"Sign In"} />
         </Link>
       </div>
