@@ -15,6 +15,10 @@ export const signup = async (req, res, next) => {
         email,
         password: hashedPassword
     });
-    await newUser.save();
-    res.json('User registered successfully');
+    try{
+        await newUser.save();
+        res.json('User registered successfully');
+    }catch{
+        res.status(500).json({message: error.message});
+    }
 }
