@@ -7,6 +7,7 @@ import "./index.css";
 import GstRates from "./screens/GstRates";
 import AboutUs from "./components/AboutUs";
 import TaxPlanning from "./screens/taxPlanning";
+import TaxCalculator from "./TaxCalculator/TaxCalculator";
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/tax-planning" element={<TaxPlanning />} />
+        <Route path="/temp" element={<TaxCalculator />} />
 
       </Routes>
     </Router>
