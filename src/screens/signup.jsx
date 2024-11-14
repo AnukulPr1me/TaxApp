@@ -49,7 +49,7 @@ export default function signup() {
             ease. A user-friendly interface simplifies data entry and review.
           </p>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 shadow-lg p-8">
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
               <Label value="Your username" />

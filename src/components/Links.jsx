@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import taxIcon from "../assets/images/taxIcon.webp";
-import videoCall from "../assets/images/videoCall.webp"
-import taxfiling from "../assets/images/taxfiling.webp"
+import videoCall from "../assets/images/videoCall.webp";
+import taxfiling from "../assets/images/taxfiling.webp";
+import gstLogo from "../assets/images/gstlogo.webp"
+import GstRates from "../screens/GstRates";
 
 const linksData = [
   {
@@ -10,7 +12,7 @@ const linksData = [
     details:
       "Easily calculate your tax with our tool. Enter your income and deductions, and get an accurate tax estimate. Save time by instantly knowing your potential liabilities or refunds.",
     imageLink: taxIcon,
-    link: "/", // Default link, replace later
+    link: "/tax-calculator", // Default link, replace later
   },
   {
     id: 1,
@@ -22,11 +24,11 @@ const linksData = [
   },
   {
     id: 2,
-    title: "Tax Optimization",
+    title: "GST Rates",
     details:
       "Optimize your taxes to save money. Discover tax-saving opportunities, maximize deductions, and plan ahead for the upcoming tax year. Learn strategies to reduce your overall tax burden.",
-    imageLink: taxIcon,
-    link: "/", // Default link, replace later
+    imageLink: gstLogo,
+    link: "/gst-rates", // Default link, replace later
   },
   {
     id: 3,
@@ -56,11 +58,11 @@ const linksData = [
 
 const Links = () => {
   return (
-    <div className="w-full md:h-screen py-8 flex justify-center items-center">
+    <div className=" py-8 flex justify-center items-center ">
       <div className="max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
         {linksData.map((link) => (
           <Link key={link.id} to={link.link}>
-            <div className="bg-white rounded-lg shadow-primary-green p-6 text-center flex flex-col justify-between transition-transform transform hover:scale-105 h-auto lg:h-[300px]">
+            <div className="bg-white rounded-lg shadow-primary-green p-6 text-center flex flex-col justify-between transition-transform transform hover:scale-105 max-md:h-auto min-h-[300px]">
               <img
                 src={link.imageLink}
                 alt={link.title}
