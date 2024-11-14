@@ -1,53 +1,59 @@
 import { useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 
-
 const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndexes, setActiveIndexes] = useState([]);
   const answerRefs = useRef([]);
 
   const toggleAccordion = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(null);
+    if (activeIndexes.includes(index)) {
+      setActiveIndexes(activeIndexes.filter((i) => i !== index));
     } else {
-      setActiveIndex(index);
+      setActiveIndexes([...activeIndexes, index]);
     }
   };
 
   useEffect(() => {
     answerRefs.current.forEach((el, index) => {
       if (el) {
-        if (index === activeIndex) {
+        if (activeIndexes.includes(index)) {
           gsap.to(el, { height: 'auto', opacity: 1, duration: 0.3, ease: 'power2.out' });
         } else {
           gsap.to(el, { height: 0, opacity: 0, duration: 0.3, ease: 'power2.in' });
         }
       }
     });
-  }, [activeIndex]);
+  }, [activeIndexes]);
 
   const faqData = [
     {
-      question: 'What is React?',
-      answer: 'React is a JavaScript framework used mainly for developing mobile applications. It works by directly manipulating the browser’s HTML and CSS, making it very fast without any delays in loading content. React also refreshes the entire page every time an update happens, ensuring all data is always up-to-date.'
+      question: 'What is income tax?',
+      answer: 'Income tax is a tax imposed by the government on the income earned by individuals and businesses. It is calculated as a percentage of the income and is used to fund public services.'
     },
     {
-      question: 'What is an accordion?',
-      answer: 'An accordion is a type of UI component where all content is visible all the time. Instead of expanding or collapsing, it uses scrollbars to show content that doesn’t fit within the section. It’s best for displaying static content with little need for user interaction or animation.'
+      question: 'When is the tax filing deadline?',
+      answer: 'The tax filing deadline varies by country, but it is generally in the first half of the year. For example, in the United States, the deadline for filing individual income taxes is usually April 15.'
     },
     {
-      question: 'How do I create an accordion in React?',
-      answer: 'You can create an accordion in React by using loops and hiding each section individually with a loop. No state or extra logic is required, as you can directly change the visibility of each part using plain JavaScript. This approach works best with multiple nested loops to simplify the structure.'
+      question: 'What are tax deductions and credits?',
+      answer: 'Tax deductions reduce your taxable income, while tax credits directly reduce the amount of tax you owe. Common deductions include mortgage interest, while credits might include education or child tax credits.'
+    },
+    {
+      question: 'How do I file my taxes?',
+      answer: 'You can file taxes through online tax software, by hiring a tax professional, or using government portals for electronic filing. Some countries offer free filing options for certain income levels.'
+    },
+    {
+      question: 'What happens if I miss the tax deadline?',
+      answer: 'If you miss the deadline, you may incur penalties or interest on the amount owed. Many tax authorities allow you to file a late return, and in some cases, you can request an extension.'
     }
   ];
-  
 
   return (
     <div className="w-full px-2 md:px-[110px]">
       {faqData.map((faq, index) => (
         <div key={index} className="border-b">
           <div
-            className="cursor-pointer py-4 px-6  flex justify-between items-center"
+            className="cursor-pointer py-4 px-6 flex justify-between items-center"
             onClick={() => toggleAccordion(index)}
           >
             <p className="font-semibold text-[20px]">{faq.question}</p>
