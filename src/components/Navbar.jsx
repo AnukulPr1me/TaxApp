@@ -40,8 +40,10 @@ const Navbar = () => {
         <Link to="/about-us">
           <p className="navLinks">About</p>
         </Link>
-
+        <Link to="/contact-us">
         <p className="navLinks">Contact</p>
+        </Link>
+       
 
         {/* Link to Sign In page */}
         <Link to="/sign-in">
