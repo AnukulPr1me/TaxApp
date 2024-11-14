@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import GstRates from "./screens/GstRates";
 import AboutUs from "./components/AboutUs";
+import Contact from "./screens/Contact";
 
 // added the gst-rates route
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
           <Route index element={<Hero />} />
           <Route path="/gst-rates" element={<GstRates/>} />
           <Route path="/about-us" element={<AboutUs/>} />
+          <Route path="/contact-us" element={<Contact/>} />
         </Route>
         <Route path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<Signup />} />
